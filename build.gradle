@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+application { // Identifies which class contains the entry point to the program.
+    //It is always a method called main
+    mainClass = 'Main'
+}
+
+group = 'org.example' //Usually identifies your company - not essential
+version = '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8 // It sets Java version 8
+
+repositories {
+    mavenCentral() //an online repository where libraries are stored
+}
+
+dependencies {
+    //Libraries to use for Unit Testing
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
