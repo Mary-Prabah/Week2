@@ -31,3 +31,5 @@ public class Main {
 
     }
 }
+//Abstract superclass are classes that cannot be instantiated on their own and are intended to be
+//inherited by other classes.
