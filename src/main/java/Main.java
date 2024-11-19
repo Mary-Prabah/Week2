@@ -4,8 +4,8 @@ import java.awt.event.WindowEvent;
 
 public class Main {
     public static void main(String[] args) {
-        Point point = new Point(100, 100);
-    Drawing drawing = new Drawing(50,point,Color.red);
+
+    Drawing drawing = new Drawing();
     Frame frame = new Frame();
     frame.add(drawing);
 
