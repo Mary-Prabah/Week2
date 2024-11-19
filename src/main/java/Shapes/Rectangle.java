@@ -1,3 +1,5 @@
+package Shapes;
+
 import java.awt.*;
 
 public class Rectangle extends Shape{
@@ -17,5 +19,5 @@ public class Rectangle extends Shape{
         g.fillRect(center.x, center.y , width, height);
 
     }
-    //It is a method of the class Rectangle, so it is one of its attributes. I.e. rectangle.draw(g)!!}
+    //It is a method of the class Shapes.Rectangle, so it is one of its attributes. I.e. rectangle.draw(g)!!}
 }

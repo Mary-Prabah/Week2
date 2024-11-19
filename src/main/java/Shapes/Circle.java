@@ -1,3 +1,5 @@
+package Shapes;
+
 import java.awt.*;
 public class Circle extends Shape {//Class
     private int radius;
@@ -5,7 +7,7 @@ public class Circle extends Shape {//Class
 
     public Circle(int radius, Point center, Color color){
         super(center, color);//i.e. when circle is instantiated, so is the instantiation of center and color
-        //as in Shape, there were already instantiate (i.e. private Point center etc...)
+        //as in Shapes.Shape, there were already instantiate (i.e. private Point center etc...)
         this.radius = radius;
     }
 //Constructors in Java do not have a return type, not even void.

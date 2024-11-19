@@ -1,4 +1,7 @@
-import javax.swing.*;
+import Shapes.Circle;
+import Shapes.Rectangle;
+import Shapes.Square;
+
 import java.awt.*;
 
 public class Drawing extends Canvas {//It extends the already existing method Canvas
@@ -11,7 +14,7 @@ public class Drawing extends Canvas {//It extends the already existing method Ca
 
         this.circle = new Circle(50, new Point(100, 100), Color.yellow);
         // You need to put Point!!! Because, before you had not yet instantiated the object of type point!!
-        this.rectangle = new Rectangle(100, 50, new Point(50, 50), Color.red);
+        this.rectangle = new Shapes.Rectangle(100, 50, new Point(50, 50), Color.red);
         //I guess Color is not instantiated because we are using a class method and NOT creating an object
         this.square = new Square(30, new Point(50, 50), Color.blue);
     }
@@ -25,7 +28,5 @@ public class Drawing extends Canvas {//It extends the already existing method Ca
         rectangle.draw(g);
         square.draw(g);
     }
-
-
 
 }
