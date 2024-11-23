@@ -13,3 +13,5 @@ public abstract class Shape {
 
     public abstract void draw(Graphics g);
 }
+
+//You have to use implement 'cuz you cannot call an abstract class/method unless it is for "super"
